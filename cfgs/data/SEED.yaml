@@ -1,0 +1,15 @@
+dataset_name: 'SEED'
+data_dir: '/mnt/data/model_weights/grm/SEED_old'
+fs: 200
+n_channs: 62
+n_session: 3
+n_subs: 15
+n_vids: 15
+n_class: 3
+
+# changeable
+timeLen: 30
+timeStep: 15
+timeLen2: 1
+timeStep2: 1
+

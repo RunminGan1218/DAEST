@@ -1,0 +1,16 @@
+dataset_name: 'SEEDV'
+data_dir: '/mnt/data/model_weights/grm/SEEDV_new2'
+fs: 125
+n_channs: 60
+n_session: 3
+n_subs: 16
+n_vids: 15
+n_class: 5
+
+# changeable
+timeLen: 22
+timeStep: 11
+timeLen2: 1
+timeStep2: 1
+
+class_names: ['Disgust', 'Fear', 'Sad', 'Neutral', 'Happy']

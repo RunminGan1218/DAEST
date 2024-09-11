@@ -1,0 +1,14 @@
+dataset_name: 'FACED'
+data_dir: '/mnt/data/model_weights/grm/FACED_def_c2'
+fs: 125
+n_channs: 30
+n_session: 1  
+n_subs: 123
+n_vids: 28
+
+# changeable
+n_class: 2      # 2/9 for classification
+timeLen: 5    
+timeStep: 2   
+timeLen2: 1   
+timeStep2: 1  

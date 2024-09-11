@@ -1,0 +1,12 @@
+_target_: model.models.ConvNet_complete_baseline_new
+n_timeFilters: 16 
+timeFilterLen: 30
+n_spatialFilters: 16
+stimeFilterLen: 3
+avgPoolLen: 15 
+timeSmootherLen: 3 
+n_channs: ${data.n_channs}
+stratified: ['initial', 'middle1', 'middle2']
+multiFact: 2
+saveFea: False
+extract_mode: ${ext_fea.mode}
