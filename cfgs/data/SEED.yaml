@@ -1,5 +1,5 @@
 dataset_name: 'SEED'
-data_dir: '/mnt/data/model_weights/grm/SEED_old'
+data_dir: './SEED_old'   #set your own data path
 fs: 200
 n_channs: 62
 n_session: 3

@@ -1,7 +1,7 @@
-run=3
-dataset=SEED
-gpus='[5]'
-valid_method='loo'
+run=1
+dataset=FACED_def   #set your dataset and config the path in corresponding yaml file in data folder
+gpus='[0]'
+valid_method='loo'  # 'loo' or int number
 logging=default
 iftest=False
 msFilter_timeLen=3
@@ -14,11 +14,10 @@ activ='sigmoid'
 model=cnn_att
 has_att=True
 global_att=False
-mlp_wds=(0.001 0.0022 0.005 0.0075 0.011)
-
 ext_wd=0.00015
+mlp_wds=(0.0022 0.005)
 
-
+iftest=True   # if true, only run 1 fold
 
 
 proj_name="$dataset""_epoch30""_$model""_att$has_att""_global$global_att""_act$activ"
@@ -39,6 +38,7 @@ python train_ext.py log.run=$run log.proj_name=$proj_name data=$dataset model=$m
                     model.seg_att=$seg_att model.avgPoolLen=$avgPoolLen model.timeSmootherLen=$timeSmootherLen\
                     model.timeFilterLen=$timeFilterLen\
                     model.activ=$activ model.has_att=$has_att model.global_att=$global_att\
+                    train.iftest=$iftest
                     
 
                     
@@ -47,6 +47,7 @@ python extract_fea.py log.run=$run log.proj_name=$proj_name data=$dataset \
                       train.gpus=$gpus train.valid_method=$valid_method \
                       hydra/job_logging=$logging train.iftest=$iftest \
                       log.exp_name=$exp_name \
+                      train.iftest=$iftest\
                       # ext_fea.mode='de'
 
 
@@ -59,6 +60,7 @@ do
                     hydra/job_logging=$logging train.iftest=$iftest \
                     log.exp_name=$exp_name \
                     mlp.wd=$mlp_wd \
+                    train.iftest=$iftest\
                     # ext_fea.mode='de'
 
 done

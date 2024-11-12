@@ -1,5 +1,5 @@
 dataset_name: 'FACED'
-data_dir: '/mnt/data/model_weights/grm/FACED_def_c2'
+data_dir: './FACED_def_c2'   #set your own data path
 fs: 125
 n_channs: 30
 n_session: 1  
