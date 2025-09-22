@@ -1,12 +1,15 @@
+<!-- omit in toc -->
 # DAEST
 
+<!-- omit in toc -->
 ## Table of Contents
-
 - [Main Article](#main-article)
 - [Provided Datasets](#provided-datasets)
+- [Data Preprocessing](#data-preprocessing)
 - [Requirements](#requirements)
   - [Mandatory](#mandatory)
   - [Optional](#optional)
+  - [Hardware](#hardware)
 - [Getting Started](#getting-started)
 
 ## Main Article
@@ -24,6 +27,22 @@
 
 - [SEED/SEEDV](https://bcmi.sjtu.edu.cn/~seed/seed-v.html)
 - [FACED](https://www.synapse.org/Synapse:syn50614194/wiki/620378)
+
+## Data Preprocessing
+For **SEED dataset preprocessing**, we provide two MATLAB scripts in data_preprocessiong folder:
+
+- `nt_find_bad_channels_custom.m`  
+  Custom bad-channel detection function.
+
+- `AutoICA_SEED.m`  
+  Automatic ICA-based preprocessing for SEED EEG data.
+
+Both scripts require the **[FieldTrip toolbox](https://www.fieldtriptoolbox.org/)** installed in your MATLAB environment.
+
+For preprocessing of other datasets, you may also refer to this repository:  
+👉 [EEG_Preprocess_python_new](https://github.com/soul-M-42/EEG_Preprocess_python_new)
+
+
 ## Requirements
 
 ### Mandatory
