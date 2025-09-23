@@ -37,7 +37,7 @@ For **SEED dataset preprocessing**, we provide two MATLAB scripts in data_prepro
 - `AutoICA_SEED.m`  
   Automatic ICA-based preprocessing for SEED EEG data.
 
-Both scripts require the **[FieldTrip toolbox](https://www.fieldtriptoolbox.org/)** installed in your MATLAB environment.
+The second script require the **[FieldTrip toolbox](https://www.fieldtriptoolbox.org/)** installed in your MATLAB environment.
 
 For preprocessing of other datasets, you may also refer to this repository:  
 👉 [EEG_Preprocess_python_new](https://github.com/soul-M-42/EEG_Preprocess_python_new)
