@@ -1,3 +1,4 @@
 __pycache__/
 daest_run
 *.pyc
+.vscode

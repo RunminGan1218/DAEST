@@ -42,6 +42,7 @@ The second script require the **[FieldTrip toolbox](https://www.fieldtriptoolbox
 For preprocessing of other datasets, you may also refer to this repository:  
 👉 [EEG_Preprocess_python_new](https://github.com/soul-M-42/EEG_Preprocess_python_new)
 
+The preprocessed datasets are now available at https://huggingface.co/datasets/Runmin1218/DAEST_dataset
 
 ## Requirements
 
